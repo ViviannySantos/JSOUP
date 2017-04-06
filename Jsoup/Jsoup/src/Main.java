@@ -24,7 +24,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 		for(int num =1; num <= 9; num ++){
-			String tipo = "frases-de-reflexao/page/"; // VOCÊ IRAR COLOCAR A URL QUE SE REPETE EM TODAS AS PÁGINAS AQUI.
+			String tipo = "frases-de-reflexao/page/"; // VOCÊ IRÁ COLOCA A URL QUE SE REPETE EM TODAS AS PÁGINAS AQUI.
 			String tipoMensagem = "extra";
 			Document doc = Jsoup.connect("http://www.url.com.br/"+ tipo + num).get(); // AQUI FICARÁ A URL QUE SEMPRE MODIFICA, QUANDO É MUDADO DE PÁGINA.
 			Elements els = doc.getElementsByClass("frase");
